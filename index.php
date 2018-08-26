@@ -1,49 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Membuat Form Validasi dengan Javascript - WWW.MALASNGODING.COM</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<br/>
-	<br/>
-	<center><h1><i>DataKu DataMu</i></h1></center>
-	<center><h2>SMK CENDEKIA</h2></center>	
-	<br/>
-	<div class="login">
-	<br/>
-		<form action="login.php" method="post" onSubmit="return validasi()">
-			<div>
-				<label>Username:</label>
-				<input type="text" name="username" id="username" />
-			</div>
-			<div>
-				<label>Password:</label>
-				<input type="password" name="password" id="password" />
-			</div>			
-			<div>
-				<input type="submit" value="Login" class="tombol">
-			</div>
-			<div>
-				Belum punya akun? <a href="daftar.php"> Daftar</a>
-			</div>
-		</form>
-	</div>
+<?php include 'header.php';?>
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Version 2.0</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="../localhost/new/i/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>
 
-</body>
+    <!-- Main content -->
+    <section class="content">
+      <!-- Info boxes -->
+      <div class="row">
+                  <div class="col-xs-12">
+
+                  <div class="box">
+                    <div class="box-body">
+                    <center><h3>SELAMAT DATANG DI APLIKASI PENDATAAN SISWA SMK CENDEKIA LASEM</h3></center><br></br>
+                    <center><img src="logo2.png"></center><br></br>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
 
 
-<script type="text/javascript">
-	function validasi() {
-		var username = document.getElementById("username").value;
-		var password = document.getElementById("password").value;		
-		if (username != "" && password!="") {
-			return true;
-		}else{
-			alert('Username dan Password harus di isi !');
-			return false;
-		}
-	}
-
-</script>
-</html>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <?php include 'footer.php';?>
